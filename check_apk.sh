@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Created by https://github.com/djraw
+#
 
 apk update > /dev/nul
 countUpdates=$(apk -u list | wc -l)
