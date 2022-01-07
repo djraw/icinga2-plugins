@@ -22,7 +22,7 @@
 throttle=$(/opt/vc/bin/vcgencmd get_throttled)
 
 if [ "$throttle" == "throttled=0x0" ]; then
-     echo "OK - no under-volteage/throttling: $throttle"
+     echo "OK - no under-voltage/throttling: $throttle"
      exit 0
 else
      echo "WARNING - under-voltage/throttling occured: $throttle"
