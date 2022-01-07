@@ -18,6 +18,8 @@
 # 18     40000    Throttling has occurred
 # 19     80000    Soft temperature limit has occurred
 # A value of 0x50000 means 16 & 18 -- from the boot moment up to now Under-Voltage has ocurred at some point as well as Throrrling has occured.
+#
+# nagios user needs permissions to use vcgencmd -> $ sudo usermod -aG video nagios
 
 throttle=$(/opt/vc/bin/vcgencmd get_throttled)
 
